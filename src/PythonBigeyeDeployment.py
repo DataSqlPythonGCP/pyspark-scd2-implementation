@@ -1,9 +1,8 @@
-# Yaml Test
 # Description : Code is used for automation of export / import process of Bigeye's Table level metrics
 # Created by : Abhishek Dixit
 # Date Created : 15 Apr 2024 Date Modified : 20 Mar 2026
 # Tech : Python, Bigeye SDK, CSV files
-# Create list of table id's in CSV for which export / import is inteded.
+# Create list of table id's in CSV for which export / import is intended.
 # Create bigeye cred file in json format and store it in Scripts folders.
 
 import os

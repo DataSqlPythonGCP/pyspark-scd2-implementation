@@ -1,9 +1,9 @@
-# ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# Python Script for automatic Bigquery data back up's
-# Backup python script for bq production table.
-# As of now only Abhishek has the access to manually delete snapshot table as it requires granular permission. However the permission should be applied to SA if jobs are scheduled.
-# Note the once snapshot is created it cannot be modified and table with same name cannot be created it can only be deleted / dropped.
-
+""" Python Script for automatic Bigquery data back up's
+Backup python script for bq production table.
+Deleting snapshot table requires granular permissions.
+How ever the permission should be applied to SA if jobs are scheduled.
+Note the once snapshot is created it cannot be modified and table with same name cannot be created it can only be deleted / dropped.
+"""
 
 from google.cloud import bigquery
 import google.auth
