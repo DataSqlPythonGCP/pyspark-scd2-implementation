@@ -1,0 +1,6 @@
+rule_id,column_name,rule_type,rule_value,severity,description
+1,customer_name,completeness,NOT_NULL,HIGH,Name should not be null
+2,email,accuracy,REGEX:^[A-Za-z0-9+_.-]+@(.+)$,HIGH,Valid email format
+3,age,accuracy,RANGE:0:120,MEDIUM,Valid age range
+4,order_id,uniqueness,UNIQUE,HIGH,Unique order ID
+5,"country,state",consistency,"MAP:India=MP;USA=CA,TX",MEDIUM,Valid country-state mapping
