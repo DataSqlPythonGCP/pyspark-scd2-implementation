@@ -14,5 +14,7 @@ product and date dimensions. Refer /data/sample_dat/*dim.csv for sample dimensio
 
 3. Basic DQ Framework. Sample DQ rules and Data file in sample_data folder. 
 
-4. Full Fledged GCP-Bigquery archival solution using Python + SQL. This can be used in production with small tweaks.
+4. GCP-Bigquery archival solution using Python + SQL. I am sharing the skeleton, can be tweaked for prod.
+
+5. Python based Bigeye (DQ tool) deployment of metrics from DEV-->QA-->Prod. 
 

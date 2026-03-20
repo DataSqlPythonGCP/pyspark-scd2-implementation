@@ -1,8 +1,8 @@
 # Yaml Test
 # Description : Code is used for automation of export / import process of Bigeye's Table level metrics
 # Created by : Abhishek Dixit
-# Date Created : 15 Apr 2024 Date Modifie : 20 Mar 2026
-# Tech : Python, Bieye SDK, CSV files
+# Date Created : 15 Apr 2024 Date Modified : 20 Mar 2026
+# Tech : Python, Bigeye SDK, CSV files
 # Create list of table id's in CSV for which export / import is inteded.
 # Create bigeye cred file in json format and store it in Scripts folders.
 
@@ -86,8 +86,6 @@ def create_yml_upsert_file(directory_path):
 
 
 def plan_and_apply_metrics():
-    # This will not work for QA as need to set QA worspace first and schemas / tables not ye available.
-    # For DEV the plan command works fine and no errors reported.
     path = shutil.which("bigeye", path="C:\\Users\\username\\bigeye_cli\\Scripts")
     file_path = "C:\\Users\\username\\bigeye_cli\\Scripts\\raw_mds_dim_business_function_copy.bigconfig.yml"
     # cmd = [path, "bigconfig", "--help"]
@@ -119,8 +117,7 @@ def create_template_metrics():
 
     # get_yml_file_export()
     # create_yml_upsert_file(directory_path)
-    plan_and_apply_metrics()  # This will not work for QA as need to set QA worspace first and schemas / tables not ye available.
-
+    plan_and_apply_metrics()
 
 if __name__ == '__main__':
     create_template_metrics()
