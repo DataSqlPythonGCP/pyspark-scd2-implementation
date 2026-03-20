@@ -74,7 +74,7 @@ class DQFramework:
     def check_consistency(self, rule):
         cols = rule["column_name"].split(',')
         rule_value = rule['rule_value'].removeprefix("MAP:").strip()
-        rule_value = rule['rule_value']
+
         mapping = {}
         for pair in rule_value.split(';'):
             k,v = pair.split('=')
